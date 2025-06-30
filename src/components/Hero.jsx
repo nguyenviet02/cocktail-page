@@ -53,7 +53,7 @@ const Hero = () => {
       .to('.left-leaf', { y: -200 }, 0);
 
     const startValue = isMobile ? 'top 50%' : 'center 60%';
-    const endValue = isMobile ? '120% top' : 'bottom top';
+    const endValue = isMobile ? '120% top' : 'bottom top'; // This mean when the bottom of video is at the top of the screen, mean x2 screen height => 2 section with 100vh  will cover this video
 
     const tl = gsap.timeline({
       scrollTrigger: {
